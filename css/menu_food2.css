@@ -1,0 +1,101 @@
+
+.background2{
+  width: 1200px;
+  height: 800px;
+  border: 1px solid transparent;
+  margin: 0 auto;
+  position: relative;
+  background-color: #BD3B47;
+}
+
+.fm_bar{
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: #DB983D;
+  width: 600px;
+  padding: 10px 0;
+  margin: 0 auto;
+  border-radius: 25px;
+  margin-top: 80px;
+  color: #BD3B47;
+}
+
+.fm_bar p:nth-child(2){
+  padding: 0 80px;
+}
+
+.fm_bar a{
+  color: #EDE0D8;
+}
+
+
+.fm_title{
+  font-size: 28px;
+  /* border: 1px solid blue; */
+  text-align: center;
+  padding: 150px 0 ;
+  letter-spacing: 5px;
+  color: #EDE0D8;
+}
+
+/* 下底線 */
+.fm_bar p:first-child{
+  border-bottom: 2px solid #BD3B47;
+}
+
+/* 調整主廚推薦&熱門 */
+
+.fm_rcm li{
+  /* margin-right: 100px; */
+}
+
+.fm_info{
+  font-size: 20px;
+  /* border: 1px solid green; */
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.fm_info ul{
+  position: relative;
+  overflow: hidden;
+}
+
+.fm_rcm,.fm_hot{
+  list-style: none;
+  background-color: #EDE0D8;
+  border-radius: 10px;
+  color: #BD3B47;
+  width: 350px;
+  height: 200px;
+  text-align: center;
+  padding: 0;
+  padding-top: 30px;
+}
+
+.fm_rcm{
+  margin-right: 200px;
+  position: relative;
+}
+
+.fm_rcm li:first-child, .fm_hot li:first-child{
+  padding-bottom: 20px;
+}
+
+/* 緞帶 */
+
+.ribbon{
+  width: 250px;
+  padding: 6px;
+  text-align: center;
+  background-color: #E29C3E;
+  position: absolute;
+  color: white;
+  font-size: 16px;
+  transform: rotate(-45deg);
+  top: 25px;
+  left: -80px;
+}

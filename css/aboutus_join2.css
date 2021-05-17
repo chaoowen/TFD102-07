@@ -1,0 +1,137 @@
+@import "./nav.css";
+@import "./aboutus_us1.css";
+
+.background__2{
+  width: 1200px;
+  height: 100vh;
+  border: 1px solid purple;
+  margin: 0 auto;
+  position: relative;
+  background-color: #191C44;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 導覽列 */
+
+.aboutus_bar{
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: #E29C3E;
+  width: 600px;
+  padding: 10px 0;
+  margin: 0 auto;
+  border-radius: 25px;
+  margin-top: 80px;
+  color: #191C44;
+}
+
+.aboutus_bar p:nth-child(2n){
+  padding: 0 40px;
+}
+
+.aboutus_bar a{
+  color: #EDE0D8;
+}
+
+
+/* 下底線 */
+
+.aboutus_bar p:last-child{
+  border-bottom: 2px solid #191C44;
+}
+
+
+/* 內文 */
+
+/* 加入我們 */
+
+.joinus{
+  /* border: 1px solid yellow; */
+  display: flex;
+  flex-direction: column;
+  color: #EDE0D8;
+  /* width: 100%; */
+}
+
+.joinus h4{
+  font-size: 28px;
+  /* border: 1px solid green; */
+  padding: 80px 0;
+  text-align: center;
+}
+
+.join1 p{
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.join2 p{
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+}
+
+/* 調整文字位置 */
+.join_word{
+  display: flex;
+  /* border: 1px solid yellow; */
+}
+
+/* 調整兩個按鈕 */
+
+.join1 div,.join2 div{
+  font-size: 16px;
+  text-align: center;
+  /* border: 1px soid pink; */
+  width: 150px;
+  background-color: #EDE0D8;
+  border-radius: 10px;
+  margin: 30px 0;
+}
+
+.join1 div a,.join2 div a{
+  display: block;
+  color: #E29C3E;
+  padding: 15px 40px;
+}
+
+.join1 ,.join2{
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+/* 滑鼠移過出現放大效果 */
+/* 左 */
+.join1 div:hover {
+  transform: scale(1.2);  /* 變成原圖的x倍 */
+}
+
+.join1 div:hover .hover1{
+  color: #191C44;
+}
+
+.join1 div{
+  transition: .8s;
+}
+
+/* 右 */
+.join2 div:hover {
+  transform: scale(1.2);  /* 變成原圖的x倍 */
+}
+
+.join2 div:hover .hover2{
+  color: #191C44;
+}
+
+.join2 div{
+  transition: .8s;
+}

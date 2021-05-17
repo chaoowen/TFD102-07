@@ -1,0 +1,81 @@
+@import "./nav.css";
+@import "./menu_food2.css";
+@import "./menu_food3.css";
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  text-decoration: none;
+}
+
+body{
+  font-size: 0;
+  width: 1200px;
+  height: 100%;
+}
+
+.background{
+  width: 1200px;
+  /* border: 1px solid transparent; */
+  margin: 0 auto;
+  position: relative;
+}
+
+.pic{
+  height: 100vh;
+  overflow: hidden;
+}
+
+.cover{
+  position: relative;
+}
+
+.cover img{
+  width: 100%;
+  position: relative;
+  /* top: -450px; */
+  /* opacity: .8; */
+}
+
+/* 新增背景圖遮罩 */
+.pic-cover{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.5);
+}
+
+.all_title{
+  /* border: 1px solid orange; */
+  /* width: 200px;
+  height: 500px; */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+.title{
+  /* border: 1px solid blue; */
+  font-size: 60px;
+  border: 10px solid #E29C3E;
+  padding: 40px 60px;
+}
+
+.all_title>p{
+  /* border: 1px solid red; */
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 5px;
+  position: relative;
+  top: 80px;
+  color: #E29C3E;
+}
+
+.title p{
+  color: #E29C3E;
+}

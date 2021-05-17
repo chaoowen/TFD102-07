@@ -1,0 +1,116 @@
+.background4{
+  width: 1200px;
+  /* border: 1px solid purple; */
+  position: relative;
+  margin: 0 auto;
+}
+
+/* 訂位欄 */
+.footer_reserve{
+  font-size: 28px;
+  width: 100%;
+  height: 400px;
+  background-color: #E29C3E;
+  line-height: 50px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 訂位欄 按鈕 */
+.footer_btn a{
+  display: block;
+  text-decoration: none;
+  width: 200px;
+  height: 60px;
+  background-color: #BD3B47;
+  color: #EDE0D8;
+  border-radius: 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_btn p{
+  font-size: 28px;
+}
+
+/* 訂位欄 調整間距 */
+.footer_reserve p:nth-child(2){
+  padding-bottom: 50px;
+}
+
+
+/* 連絡我悶 */
+/* 文字 */
+.footer_contactus{
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 250px;
+  font-size: 14px;
+  color: white;
+
+  background-color: rgba(0, 0, 0, .75);
+}
+
+.footer_word p{
+  line-height: 28px;
+}
+.footer_word div:first-child{
+  padding-bottom: 10px;
+}
+
+.footer_contactus .footer_word{
+  /* border: 1px solid red; */
+}
+
+.footer_word{
+  padding-left: 100px;
+}
+
+/* 調整FB跟IG間距 */
+.footer_word div:first-child{
+  display: flex;
+  align-items: center;
+}
+
+.footer_word div a img{
+  padding-left: 10px;
+}
+
+/* 圖片 */
+.map a img{
+  /* border: 1px solid blue; */
+  width: 350px;
+  height: 150px;
+  border-radius: 2px;
+  object-fit: cover;
+}
+
+/* logo與背景圖 */
+.bg{
+  display: flex;
+
+  background-image: url(../pictures/index/footer_img2.jpg);
+  background-size: 20%;
+  /* background-position: left -20px; */
+}
+
+.ft_logo img{
+  width: 80px;
+  height: auto;
+  padding: 15px 0;
+}
+
+.ft_logo{
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background-color: rgba(0,58,44,.9);
+}

@@ -1,0 +1,177 @@
+@import "./index4.css";
+
+*{
+  font-family: "cooper-black-std",serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* 髒髒圖 */
+.dirtypic{
+  background-image: url("./../pictures/dirtynew.png");
+  background-repeat: repeat;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  opacity: .1;
+}
+
+.dirtypic2{
+  background-image: url("./../pictures/dirtynew.png");
+  background-repeat: repeat;
+
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  opacity: .1;
+  transform: rotate(150deg);
+}
+
+.dirtypic3{
+  background-image: url("./../pictures/dirtynew.png");
+  background-repeat: repeat;
+
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  opacity: .1;
+  transform: rotate(210deg);
+}
+
+
+/* 漢堡列 */
+
+.hamberger_nav{
+  /* position: sticky; */
+  /* top:0; */
+  position: fixed;
+  top: 0;
+  right: 0;
+  /* border: 1px solid red; */
+  transform: translateX(100%);
+  transition: transform 1s;
+  /*
+  z-index: 90;
+  transform: translateX(600px);
+  transition: .8s;
+  display: none;
+  */
+}
+.hamberger_nav.-on{
+  transform: translateX(0%);
+}
+
+/* 隱藏checkbox */
+#switch{
+  display: none;
+}
+
+.big{
+  /* border: 10px solid blue; */
+  /* max-width: 1300px; */
+  /* overflow: hidden; */
+}
+
+#switch:checked+.hamberger_nav{
+  transform: translateX(0px);
+  display: block;
+}
+
+.hamberger_items{
+  z-index: 90;
+  width: 600px;
+  height: 100vh;
+  background-color: #195043;
+  padding-top: 100px;
+}
+
+.hamberger_items a{
+  padding-top: 30px;
+  padding-bottom: 10px;
+  margin-left: 100px;
+  margin-right: 300px;
+  text-decoration: none;
+  color: #EDE0D8;
+  font-size: 32px;
+  display: block;
+  position: relative;
+  bottom: 0;
+}
+/* 漢堡列文字 用偽元素做底線 */
+.hamberger_items a::after{
+  content: "";
+  width: 0px;
+  height: 4px;
+  background-color: #EDE0D8;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: .5s;
+}
+
+/* 漢堡列文字 底線滑鼠效果 */
+.hamberger_items a:hover::after{
+  width: 190px;
+}
+
+
+/* 導覽列 */
+.all_nav{
+  font-size: 16px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.all_nav .big .logo{
+  width: 70px;
+  height: auto;
+  /* display: inline-block; */
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%,0%);
+  z-index: 999;
+}
+
+.all_nav .big>a:nth-child(2){
+  /* display: inline-block; */
+  position: absolute;
+  top: 25px;
+  right: 95px;
+  z-index: 999;
+  width: 110px;
+  height: 45px;
+  background-color: #AC2738;
+  text-align: center;
+  text-decoration: none;
+  color: #EDE0D8;
+  border-radius: 5px;
+  padding-top: 14px;
+}
+
+.nav_btn{
+  background-image: url("../pictures/index/hamburger_menu.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 45px;
+  height: 45px;
+
+  position: absolute;
+  right: 40px;
+  top: 25px;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 999;
+}

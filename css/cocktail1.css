@@ -1,0 +1,67 @@
+@import "./nav.css";
+@import "./cocktail2.css";
+*{
+  box-sizing: border-box;
+  margin: 0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+body{
+  width: 1200px;
+  height: auto;
+  /* font-size: 0px; */
+}
+
+.background {
+  width: 1200px;
+  height: 100%;
+  /* border: 1px solid yellow; */
+  margin: 0 auto;
+  position: relative;
+}
+
+.pic{
+  height: 100vh;
+  overflow: hidden;
+  opacity: .7;
+}
+
+.cover{
+  position: relative;
+}
+
+.cover img{
+  width: 100%;
+  position: relative;
+  top: -400px;
+}
+
+.all_title{
+  /* border: 1px solid orange; */
+  /* width: 200px;
+  height: 500px; */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+.title{
+  font-size: 60px;
+  border: 10px solid #BD3B47;;
+  padding: 60px 40px;
+  color: #BD3B47;
+  white-space: nowrap;
+}
+
+.all_title>p{
+  /* border: 1px solid red; */
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  position: relative;
+  top: 80px;
+  color: #BD3B47;
+}

@@ -1,0 +1,73 @@
+
+.background2{
+  width: 1200px;
+  height: auto;
+  /* border: 1px solid purple; */
+  margin: 0 auto;
+  position: relative;
+  background-color: #BD3B47;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 導覽列 */
+
+.aboutus_bar{
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: #DB983D;
+  width: 600px;
+  padding: 10px 0;
+  margin: 0 auto;
+  border-radius: 25px;
+  margin-top: 80px;
+  color: #BD3B47;
+}
+
+.aboutus_bar p:nth-child(2n){
+  padding: 0 40px;
+}
+
+.aboutus_bar a{
+  color: #EDE0D8;
+}
+
+
+/* 下底線 */
+
+.aboutus_bar p:first-child{
+  border-bottom: 2px solid #BD3B47;
+}
+
+
+/* 內文 */
+.aboutus_content{
+  /* border: 1px solid yellow; */
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  color: #EDE0D8;
+  margin: 80px 0;
+}
+
+.aboutus_content h4{
+  font-size: 36px;
+  /* border: 1px solid white; */
+  text-align: right;
+  letter-spacing: 7px;
+  width: 700px;
+}
+
+.content{
+  width: 600px;
+}
+
+.content p{
+  /* border: 1px solid pink; */
+  font-size: 16px;
+  line-height: 30px;
+  padding-bottom: 30px;
+}

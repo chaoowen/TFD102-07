@@ -1,0 +1,320 @@
+@import "./nav.css";
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  text-decoration: none;
+}
+
+body{
+  vertical-align: middle;
+  width: 1200px;
+  height: 100%;
+}
+
+.background {
+  width: 1200px;
+  /* border: 1px solid purple; */
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* 第一塊 */
+.pic{
+  height: 100vh;
+  overflow: hidden;
+  opacity: .6;
+}
+
+.cover{
+  position: relative;
+}
+
+.cover img{
+  width: 100%;
+  position: relative;
+  top: -950px;
+}
+
+.all_title{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+.title{
+  /* border: 1px solid blue; */
+  font-size: 60px;
+  border: 10px solid #003A2C;
+  padding: 40px 40px;
+}
+
+.all_title>p{
+  /* border: 1px solid red; */
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  position: relative;
+  top: 80px;
+}
+
+.all_title p{
+color: #003A2C;
+}
+
+
+/* 第二塊 */
+.background2{
+  width: 1200px;
+  /* height: 600px; */
+  border: 1px solid transparent;
+  margin: 0 auto;
+  position: relative;
+  background-color: #E29C3E;
+  overflow: hidden;
+}
+
+/* 調整導覽列 */
+.fm_bar{
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: #BD3B47;
+  width: 600px;
+  padding: 10px 0;
+  margin: 0 auto;
+  border-radius: 25px;
+  margin-top: 80px;
+  color: #E29C3E;
+  /* border: 5px solid blue; */
+}
+
+.fm_bar p:nth-child(2){
+  padding: 0 80px;
+}
+
+.fm_bar a{
+  color: #EDE0D8;
+}
+
+/* 下底線 */
+.fm_bar p:first-child{
+  border-bottom: 2px solid #E29C3E;
+}
+
+
+/* 懶系聯名啤酒文字 */
+.beer_title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  /* border: 5px solid blue; */
+}
+
+.beer_title h4{
+  font-size: 28px;
+  margin-top: 150px;
+  color: #EDE0D8;
+}
+
+.beer_title p{
+  color: #EDE0D8;
+  writing-mode: vertical-rl;
+  display: inline-block;
+}
+
+.beer_p1{
+  font-size: 36px;
+  position: absolute;
+  top: 280px;
+  right: 280px;
+  letter-spacing: 8px;
+}
+
+.beer_p2{
+  font-size: 20px;
+  position: absolute;
+  top: 360px;
+  right: 230px;
+  letter-spacing: 30px;
+}
+
+
+/* 主圖 */
+.beer_title img{
+  width: 500px;
+}
+
+/* 插畫家介紹 */
+.jolie{
+  /* border: 1px solid red; */
+  text-align: center;
+  /* color: #003A2C; */
+  color: #fff;
+  opacity: .8;
+  font-weight: bold;
+  margin-bottom: 50px;
+  background-color: rgba(0,0,0,.3);
+  padding: 20px;
+
+}
+
+.jolie h5{
+  font-size: 20px;
+  padding: 25px 0;
+}
+
+.jolie p{
+  font-size: 14px;
+  line-height: 35px;
+}
+
+/* 四張圖 */
+.catbear4{
+  width: 1200px;
+  height: 300px;
+  display: flex;
+}
+
+.catbear4 img{
+  width: 300px;
+  object-fit: cover;
+}
+
+
+/* 第三塊 */
+.background3{
+  width: 1200px;
+  height: 100%;
+  display: flex;
+  background-color: #191C44;
+  position: relative;
+  /* overflow: hidden; */
+  /* border: 10px solid red; */
+}
+
+/* 調整文字 */
+.beer_word1 h3, .beer_word2 h3{
+  /* font-size: 20px; */
+  color: #EDE0D8;
+  padding-bottom: 20px;
+}
+
+.beer_word1 p, .beer_word2 p{
+  font-size: 14px;
+  color: #EDE0D8;
+  text-align: justify;
+  line-height: 20px;
+}
+
+.beer_word2{
+  padding-top: 80px;
+}
+
+.all_beer_word{
+  /* border: 1px solid red; */
+  width: 560px;
+  padding-left: 80px;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  /* border: 10px solid blue; */
+}
+
+/* 圖片 */
+.beer_img{
+  position: relative;
+  /* border: 1px solid blue; */
+}
+
+.img1{
+  width:150px;
+  height: auto;
+  position: absolute;
+  left: 400px;
+  top: 100px;
+  border-radius: 5px;
+  /* box-shadow: 2px 2px 1px black; */
+}
+
+.img2{
+  width: 400px;
+  height: auto;
+  position: absolute;
+  left: 80px;
+  bottom: 100px;
+  border-radius: 5px;
+  /* box-shadow: 2px 2px 5px black; */
+}
+
+/* 第四塊 */
+.background4{
+  width: 1200px;
+  height: 100%;
+  background-color: #EDE0D8;
+  position: relative;
+  overflow: hidden;
+
+  /* 幫button置中 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 調整圖片大小 */
+.all_beer_table div img{
+  width: 100px;
+  height: auto;
+
+  transition: .5s;
+}
+
+.all_beer_table{
+  display: flex;
+  justify-content: center;
+}
+
+/* 調整文字方向 */
+.beer_content1, .beer_content2 ,.beer_content3{
+  text-align: center;
+  /* border: 1px solid yellow; */
+  margin: 60px 20px;
+  padding: 30px 10px;
+  line-height: 2rem;
+  border-radius: 5px;
+}
+
+.all_beer_table div p:last-child{
+  padding-top: 15px;
+  width: 300px;
+}
+
+/* button部分 */
+.beer_button{
+  border: none;
+  width: 200px;
+  height: 60px;
+  background-color: #BD3B47;
+  color: #EDE0D8;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  letter-spacing: 5px;
+
+  margin-bottom: 60px;
+
+}
+
+/* hover特效 */
+.beer_content1:hover,.beer_content2:hover ,.beer_content3:hover {
+  background-color: rgba(0,0,0,0.1);
+}
+
+.beer_content1:hover img,.beer_content2:hover img,.beer_content3:hover img{
+  transform: translateY(-20px);
+}

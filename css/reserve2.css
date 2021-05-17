@@ -1,0 +1,124 @@
+
+/* intro塊 */
+.background2{
+  width: 1200px;
+  /* border: 1px solid purple; */
+  margin: 0 auto;
+  position: relative;
+  background-color: #003A2C;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro{
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.intro p{
+  font-size: 32px;
+  color: #EDE0D8;
+  padding: 10px 0;
+  letter-spacing: 3px;
+}
+
+/* 表格 */
+.background3{
+  width: 1200px;
+  /* border: 1px solid purple; */
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+
+  background-color: #DB983D;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 說明文字 */
+.explain{
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.explain p{
+  /* border: 1px solid yellow; */
+  letter-spacing: 2px;
+  line-height: 1.8rem;
+}
+
+.explain p:first-child{
+  font-size: 24px;
+  /* border-bottom: 2px solid black; */
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+
+/* 表格 */
+
+.all_form{
+  /* width: 280px; */
+  /* height: auto; */
+  /* border: 1px solid blue; */
+  line-height: 50px;
+  font-size: 16px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.form{
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+}
+
+.button{
+  width: 200px;
+  height: 60px;
+  font-size: 24px;
+  letter-spacing: 5px;
+  outline: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  border: 0;
+  background-color: #BD3B47;
+  color: #EDE0D8;
+  cursor: pointer;
+  margin-bottom: 60px;
+}
+
+
+/* 調整輸入欄大小 */
+.border{
+  text-decoration: none;
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  padding-left: 5px;
+}
+
+input, select{
+  background-color: #EDE0D8;
+}
+
+/* 調整欄寬 */
+.name{
+  width: 170px;
+}

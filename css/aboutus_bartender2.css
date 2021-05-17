@@ -1,0 +1,168 @@
+@import "./nav.css";
+@import "./aboutus_us1.css";
+
+.background_2{
+  width: 1200px;
+  height: auto;
+  /* border: 1px solid purple; */
+  margin: 0 auto;
+  position: relative;
+  background-color: #003A2C;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 導覽列 */
+
+.aboutus_bar{
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: #DB983D;
+  width: 600px;
+  padding: 10px 0;
+  margin: 0 auto;
+  border-radius: 25px;
+  margin-top: 80px;
+  color: #003A2C;
+}
+
+.aboutus_bar p:nth-child(2n){
+  padding: 0 40px;
+}
+
+.aboutus_bar a{
+  color: #EDE0D8;
+}
+
+
+/* 下底線 */
+
+.aboutus_bar p:nth-child(3){
+  border-bottom: 2px solid #003A2C;
+}
+
+
+/* 內文 */
+.bartender_content{
+  /* border: 1px solid yellow; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* width: 700px; */
+  color: #EDE0D8;
+  margin: 60px 0;
+}
+
+.bartender_content h4{
+  font-size: 36px;
+  /* border: 1px solid white; */
+  padding: 20px 0;
+}
+
+.bar_content p{
+  /* border: 1px solid pink; */
+  font-size: 16px;
+  line-height: 50px;
+  text-align: center;
+}
+
+
+/* 五味調酒師 */
+.all_bartender div img{
+  object-fit: cover;
+  width: 250px;
+  height: 320px;
+  border-radius: 5px;
+  border: 1px solid #EDE0D8;
+}
+
+
+/* 調整排列方式 */
+.all_bartender{
+  /* border: 5px solid red; */
+  display: flex;
+  width: 1000px;
+  flex-wrap: wrap;
+  height: auto;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.all_bartender>div{
+  margin: 30px 20px;
+  position: relative;
+  cursor: pointer;
+  border-radius: 5px;
+  /* overflow: hidden; */
+}
+
+.bar_name{
+  position: relative;
+  overflow: hidden;
+  width: 250px;
+  height: 320px;
+}
+
+/* 調整文字 */
+.bartender_name{
+  color: white;
+  /* border: 1px solid white; */
+  position: absolute;
+  width: 250px;
+  height: 320px;
+  left: 0;
+  top: 0;
+  line-height: 40px;
+  background-color: rgba(0,0,0,.6);
+  border-radius: 5px;
+
+  transform: translateY(250px);
+  transition: ease-out .6s;
+}
+
+.bartender_name p{
+  font-size: 14px;
+  text-align: center;
+}
+
+.bartender_name span{
+  font-size: 18px;
+  text-align: right;
+  /* border:10px solid blue; */
+  display: block;
+  padding: 15px;
+}
+
+/* 橫線 */
+.bartender_name p:nth-child(2){
+  border-top: 1px solid white;
+  margin: 0 20px;
+  padding-top: 20px;
+}
+
+/* .all_bartender div p{
+  font-size: 20px;
+  color: #EDE0D8;
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: right;
+  line-height: 50px;
+  background-color: rgba(0,0,0,.6);
+  padding-right: 20px;
+  border-radius: 0 0 5px 5px;
+  transition: .5s;
+  transform: translateY(85%);
+} */
+
+/* 滑鼠效果 */
+
+.bar_name:hover .bartender_name{
+  transform: translateY(0px);
+}

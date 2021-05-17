@@ -1,0 +1,66 @@
+@import "./nav.css";
+@import "./reserve2.css";
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  text-decoration: none;
+}
+
+body{
+  font-size: 0;
+  width: 1200px;
+  height: 100%;
+}
+
+.background{
+  width: 1200px;
+  /* border: 1px solid purple; */
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.pic{
+  height: 100vh;
+  overflow: hidden;
+}
+
+.pic img{
+  width: 100%;
+  position: relative;
+  top: -50px;
+  opacity: .8;
+}
+
+/* 文字 */
+
+.all_title{
+  /* border: 1px solid orange; */
+  /* width: 200px;
+  height: 500px; */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+.title{
+  font-size: 60px;
+  border: 10px solid #191C44;
+  padding: 40px 60px;
+}
+
+.all_title>p{
+  /* border: 1px solid red; */
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  position: relative;
+  top: 80px;
+}
+
+.all_title p{
+  color: #191C44;
+}

@@ -1,0 +1,103 @@
+.background3{
+  width: 1200px;
+  /* border: 1px solid purple; */
+  margin: 0 auto;
+  height: 700px;
+  position: relative;
+  overflow: hidden;
+}
+
+.all_2img{
+  /* border: 1px solid blue; */
+  display: flex;
+  z-index: 50;
+}
+
+.all_2img a{
+  /* border: 1px solid red; */
+  font-size: 36px;
+  text-align: center;
+}
+
+/* 圖片 */
+
+.all_2img .img2_left,.all_2img .img2_right{
+  display: inline-block;
+  width: 50%;
+  height: 700px;
+  text-align: center;
+  position: relative;
+}
+
+.img2_left{
+  background-color: #003A2C;
+  transition: 0.8s;
+}
+
+.img2_right{
+  background-color: #191C44;
+  transition: 0.6s;
+}
+
+/* 文字 */
+
+.all_2img .img2_left p,.img2_right p{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #EDE0D8;
+  font-weight: bold;
+}
+
+/* 滑鼠移過出現圖片 */
+/* 左圖 */
+.all_2img .img2_left:hover{
+  background-image: url("../pictures/index/2img_left.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 55%;
+  transition: 0.6s;
+  /* background-position: left -50px; */
+  opacity: .9;
+
+  /* 透明度 0.6 的黑色半透明遮罩 */
+  /* background-color: rgba(0, 0, 0, .6); */
+  /* 設置背景混和模式為相乘模式 */
+  /* background-blend-mode: multiply; */
+}
+
+/* 文字變色 */
+.all_2img .img2_left:hover p{
+  color: #003A2C;
+  font-weight: bold;
+}
+
+
+
+/* 右圖 */
+.all_2img .img2_right:hover{
+  background-image: url("../pictures/index/2img_right.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 60%;
+  transition: 0.8s;
+  background-position: left -50px;
+  opacity: .9;
+}
+
+/* 文字變色 */
+.all_2img .img2_right:hover p{
+  color: #191C44;
+  font-weight: bold;
+}
+
+
+/* 調整文字斷行的部分 */
+
+.img2_left p,.img2_right p{
+  flex-wrap: nowrap;
+  /* border:1px solid yellow; */
+  width: 500px;
+  line-height: 70px;
+}

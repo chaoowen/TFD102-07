@@ -1,0 +1,358 @@
+@import "./nav.css";
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  text-decoration: none;
+}
+
+body{
+  vertical-align: middle;
+  width: 1200px;
+  height: 100%;
+}
+
+.background {
+  width: 1200px;
+  height: auto;
+  /* border: 1px solid purple; */
+  margin: 0 auto;
+  position: relative;
+}
+
+
+/* 第一塊 */
+.pic{
+  height: 100vh;
+  overflow: hidden;
+  opacity: .6;
+}
+
+.cover{
+  position: relative;
+}
+
+.cover img{
+  width: 100%;
+  position: relative;
+  top: -950px;
+}
+
+.all_title{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+.title{
+  /* border: 1px solid blue; */
+  font-size: 60px;
+  border: 10px solid #003A2C;
+  padding: 40px 40px;
+}
+
+.all_title>p{
+  /* border: 1px solid red; */
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  position: relative;
+  top: 80px;
+}
+
+.all_title p{
+color: #003A2C;
+}
+
+
+/* 第二塊 */
+.background2{
+  width: 1200px;
+  height: auto;
+  border: 1px solid transparent;
+  margin: 0 auto;
+  position: relative;
+  background-color: #003A2C;
+}
+
+/* 調整導覽列 */
+.fm_bar{
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: #E29C3E;
+  width: 600px;
+  padding: 10px 0;
+  margin: 0 auto;
+  border-radius: 25px;
+  margin-top: 80px;
+  color: #003A2C;
+  /* border: 5px solid blue; */
+}
+
+.fm_bar p:nth-child(2){
+  padding: 0 80px;
+}
+
+.fm_bar a{
+  color: #EDE0D8;
+}
+
+/* 下底線 */
+.fm_bar p:last-child{
+  border-bottom: 2px solid #003A2C;
+}
+
+
+/* 標題 */
+.cup_title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  color: #003A2C;
+  margin: 150px 0;
+  /* border: 5px solid blue; */
+}
+
+.cup_title h4{
+  font-size: 28px;
+  letter-spacing: 3px;
+  color: #EDE0D8;
+}
+
+.cup_title div p{
+  color: #EDE0D8;
+}
+
+.cup_title div{
+  /* border: 1px solid red; */
+  /* width: 800px; */
+  margin: 50px 0;
+  line-height: 30px;
+  text-align: center;
+}
+
+.cup_title div p:first-child{
+  padding-bottom: 20px;
+}
+
+
+/* 第二塊酒杯介紹 */
+.cup_content{
+  display: flex;
+  color: #EDE0D8;
+  vertical-align: middle;
+}
+
+.cup_content_1{
+  /* border: 1px solid red; */
+  padding: 0 60px;
+  text-align: justify;
+  line-height: 25px;
+}
+
+.cup_content_1 h4{
+  font-size: 18px;
+  padding-top: 50px;
+}
+
+.cup_content_1 p{
+  font-size: 14px;
+  padding-top: 50px;
+}
+
+
+/* 第三塊 */
+.background3{
+  width: 1200px;
+  height: auto;
+  background-color: #BD3B47;
+}
+
+/* 使用方式 */
+.how_to_use{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 2px solid black; */
+  padding-top: 50px;
+}
+
+.how_to_use>p{
+  /* border: 1px solid yellow; */
+  padding: 30px 0;
+  /* font-size: 20px; */
+  letter-spacing: 5px;
+  position: relative;   /* 給偽元素定位 */
+}
+
+.how_to_use img{
+  /* border: 1px solid yellow; */
+  width: 700px;
+  height: auto;
+}
+
+.how_to_use_word{
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid blue; */
+}
+
+.how_to_use_word div{
+  /* border: 1px solid yellow; */
+  flex: 1;
+  text-align: center;
+  line-height: 2rem;
+}
+
+/* 用偽元素做橫線 */
+.how_to_use>p::after{
+  content: "";
+  width: 120px;
+  border-bottom: 1px solid black;
+  position: absolute;
+  top: 50%;
+}
+
+.how_to_use>p::before{
+  content: "";
+  width: 120px;
+  border-bottom: 1px solid black;
+  position: absolute;
+  top: 50%;
+  right: 105%;
+}
+
+/* GIF */
+.all_gif{
+  padding: 60px 0;
+  /* border: 2px solid blue; */
+}
+
+/* 文字 */
+.all_gif>h4{
+  /* border: 2px solid red; */
+  /* flex: 1; */
+  text-align: center;
+  line-height: 2rem;
+  letter-spacing: 5px;
+  position: relative;
+}
+
+.all_gif>p{
+  text-align: center;
+  padding: 30px 0 60px 0;
+}
+
+/* 用偽元素做橫線 */
+.all_gif>h4::after{
+  content: "";
+  width: 120px;
+  border-bottom: 1px solid black;
+  position: absolute;
+  top: 50%;
+}
+
+.all_gif>h4::before{
+  content: "";
+  width: 120px;
+  border-bottom: 1px solid black;
+  position: absolute;
+  top: 50%;
+  left: 33%;
+}
+
+/* 圖片 */
+.gif{
+  display: inline-block;
+  /* border: 1px solid blue; */
+  margin-left: 100px;
+}
+
+.gif img{
+  width: 500px;
+  height: auto;
+  padding: 10px 30px;
+  border-radius: 60px;
+  /* border: 5px solid blue; */
+  display: inline-block;
+}
+
+
+/* 第四塊 */
+.background4{
+  width: auto;
+  height: auto;
+  background-color: #E29C3E;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 調整排列方式 */
+.cup_info1, .cup_info2{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 80px 0;
+  flex: 1;
+}
+
+/* 調整文字 */
+.cup_info1>div p, .cup_info2>div p{
+  padding-left: 25px;
+  padding-bottom: 10px;
+}
+
+.cup_info1>div, .cup_info2>div{
+  line-height: 30px;
+  background-color: rgb(237,224,216,.8);
+  padding: 20px 15px 20px 0;
+  border-radius: 5px;
+  position: relative;
+}
+
+/* 移動文字位置與圖片重疊 */
+.cup_info1>div{
+  left:20px;
+  bottom: 60px;
+}
+
+.cup_info2>div{
+  right:20px;
+  bottom: 90px;
+}
+
+/* 第一組圖 */
+.cup_info1 img{
+  width: 450px;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* 第二組圖 */
+.cup_info2 img{
+  width: 400px;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* button部分 */
+.cup_button{
+  border: none;
+  width: 200px;
+  height: 60px;
+  background-color: #003A2C;
+  color: #EDE0D8;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  letter-spacing: 5px;
+
+  margin-bottom: 60px;
+}

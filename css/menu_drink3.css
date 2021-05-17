@@ -1,0 +1,66 @@
+
+.background3{
+  width: 1200px;
+  height: 600px;
+  /* border: 1px solid purple; */
+  margin: 0 auto;
+  position: relative;
+  background-color: #BD3B47;
+  overflow: hidden;
+}
+
+.all_fm_snack3{
+  display: flex;
+  margin: 0 auto;
+}
+
+.fm_snack3>p{
+  text-align: right;
+  font-size: 40px;
+  margin-top: 120px;
+  color: #EDE0D8;
+  width: 650px;
+  /* border: 1px solid blue; */
+}
+
+.fm_snack3 p{
+  color: #EDE0D8;
+}
+
+/* 圖片 */
+
+.all_fm_snack3 img{
+  width: 450px;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* 文字 */
+
+.fm_snack_word3{
+  /* border: 1px solid white; */
+  display: flex;
+}
+
+/* 由於字太長，使用padding-left將字塊向右移 */
+.fm_snack_word3 div{
+  padding-left: 50px;
+}
+/*  */
+
+.fm_snack_word3 div p:nth-child(2n){
+  padding-bottom: 25px;
+}
+
+.fm_snack_word3 div p{
+  font-size: 14px;
+}
+
+.fm_snack_word3{
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+.fm_snack_word3 div:first-child{
+  margin-right: 20px;
+}
