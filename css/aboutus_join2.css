@@ -3,8 +3,8 @@
 
 .background__2{
   width: 1200px;
-  height: 100vh;
-  border: 1px solid purple;
+  height: auto;
+  /* border: 1px solid purple; */
   margin: 0 auto;
   position: relative;
   background-color: #191C44;
@@ -55,6 +55,7 @@
   flex-direction: column;
   color: #EDE0D8;
   /* width: 100%; */
+  margin-bottom: 100px;
 }
 
 .joinus h4{
