@@ -6,46 +6,6 @@
   font-style: normal;
 }
 
-/* 髒髒圖 */
-.dirtypic{
-  background-image: url("./../pictures/dirtynew.png");
-  background-repeat: repeat;
-  z-index: 100;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  top: 0;
-  left: 0;
-  opacity: .1;
-}
-
-.dirtypic2{
-  background-image: url("./../pictures/dirtynew.png");
-  background-repeat: repeat;
-
-  width: 100%;
-  height: 100%;
-  position: relative;
-  top: 0;
-  left: 0;
-  opacity: .1;
-  transform: rotate(150deg);
-}
-
-.dirtypic3{
-  background-image: url("./../pictures/dirtynew.png");
-  background-repeat: repeat;
-
-  width: 100%;
-  height: 100%;
-  position: relative;
-  top: 0;
-  left: 0;
-  opacity: .1;
-  transform: rotate(210deg);
-}
-
-
 /* 漢堡列 */
 
 .hamberger_nav{
@@ -54,9 +14,8 @@
   position: fixed;
   top: 0;
   right: 0;
-  /* border: 1px solid red; */
   transform: translateX(100%);
-  transition: transform 1s;
+  /* transition: transform 1s; */
   /*
   z-index: 90;
   transform: translateX(600px);
@@ -73,12 +32,6 @@
   display: none;
 }
 
-.big{
-  /* border: 10px solid blue; */
-  /* max-width: 1300px; */
-  /* overflow: hidden; */
-}
-
 #switch:checked+.hamberger_nav{
   transform: translateX(0px);
   display: block;
@@ -86,7 +39,7 @@
 
 .hamberger_items{
   z-index: 90;
-  width: 600px;
+  width: 50vw;
   height: 100vh;
   background-color: #195043;
   padding-top: 100px;
@@ -96,7 +49,7 @@
   padding-top: 30px;
   padding-bottom: 10px;
   margin-left: 100px;
-  margin-right: 300px;
+  /* margin-right: 300px; */
   text-decoration: none;
   color: #EDE0D8;
   font-size: 32px;
@@ -124,20 +77,31 @@
 
 /* 導覽列 */
 .all_nav{
+  /* border: 1px solid red; */
   font-size: 16px;
   position: sticky;
   top: 0;
   z-index: 999;
+  /* border: 5px solid red; */
+  margin-bottom: -95px;
+}
+
+.all_nav .big{
+  padding-top: 20px;
+  /* border: 1px solid blue; */
+}
+
+.big>a:first-child{
+  /* border: 1px solid red; */
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .all_nav .big .logo{
   width: 70px;
   height: auto;
-  /* display: inline-block; */
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translate(-50%,0%);
   z-index: 999;
 }
 
@@ -151,6 +115,7 @@
   height: 45px;
   background-color: #AC2738;
   text-align: center;
+  vertical-align: middle;
   text-decoration: none;
   color: #EDE0D8;
   border-radius: 5px;
@@ -174,4 +139,86 @@
   border-radius: 5px;
   cursor: pointer;
   z-index: 999;
+}
+
+/* RWD */
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+  /* 漢堡列 */
+  .hamberger_items{
+    width: 80vw;
+  }
+
+  /* 導覽列 */
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+  /* 漢堡列 */
+  .hamberger_items{
+    width: 100vw;
+  }
+
+  /* 導覽列 */
+  .all_nav .big .logo{
+    width: 100px;
+    margin-right: 50px;
+
+  }
+  .all_nav{
+    margin-bottom: -125px;
+  }
+  .all_nav .big>a:nth-child(2){
+    width: 140px;
+    height: 60px;
+    top: 35px;
+  }
+
+  .nav_btn{
+    width: 60px;
+    height: 60px;
+    top: 35px;
+    right: 10px;
+  }
+
+  .all_nav .big>a:nth-child(2){
+    padding-top: 20px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 575px){
+  /* 漢堡列 */
+  .hamberger_items{
+    width: 100vw;
+  }
+
+  /* 導覽列 */
+  .all_nav .big .logo{
+    width: 100px;
+  }
+  .big>a:first-child{
+    left: 0;
+    transform: translateX(0);
+  }
+  .all_nav{
+    margin-bottom: -125px;
+  }
+  .all_nav .big>a:nth-child(2){
+    width: 140px;
+    height: 60px;
+    top: 35px;
+  }
+
+  .nav_btn{
+    width: 60px;
+    height: 60px;
+    top: 35px;
+    right: 10px;
+  }
+
+  .all_nav .big>a:nth-child(2){
+    padding-top: 20px;
+    font-size: 20px;
+  }
 }

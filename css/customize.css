@@ -8,8 +8,8 @@
 
 /* 第二塊 */
 .background2{
-  width: 1200px;
-  height: auto;
+  width: 100%;
+  height: 500px;
   /* border: 1px solid purple; */
   margin: 0 auto;
   position: relative;
@@ -59,7 +59,7 @@
 .customize_word h4{
   font-size: 28px;
   margin-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
   color: #EDE0D8;
 }
 
@@ -73,7 +73,7 @@
 /* 第三塊 */
 
 .background3{
-  width: 1200px;
+  width: 100%;
   height: auto;
   /* border: 1px solid purple; */
   background-color: #191C44;
@@ -92,7 +92,7 @@
 .background3>a:first-child{
   /* border: 1px solid blue; */
   display: inline-block;
-  margin: 100px 0;
+  margin: 80px 0;
   font-size: 20px;
   padding: 20px 30px 20px 50px ;
   background-color: #E29C3E;
@@ -144,7 +144,7 @@
 /* 第四塊 */
 
 .background4{
-  width: 1200px;
+  width: 100%;
   height: auto;
   background-color: #EDE0D8;
   color: #BD3B47;
@@ -154,7 +154,7 @@
 .background4>a:first-child{
   /* border: 1px solid blue; */
   display: inline-block;
-  margin: 100px 0;
+  margin: 80px 0;
   font-size: 20px;
   padding: 20px 30px 20px 50px ;
   background-color: #E29C3E;
@@ -166,7 +166,7 @@
 /* 表格文字 */
 .wine_flavor{
   margin: 0 auto;
-  border-spacing: 30px;
+  border-spacing: 35px;
 }
 
 .wine_flavor tr td{
@@ -202,7 +202,7 @@
 /* 第五塊 */
 
 .background5{
-  width: 1200px;
+  width: 100%;
   height: auto;
   background-color: #BD3B47;
   color: #EDE0D8;

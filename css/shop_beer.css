@@ -6,26 +6,21 @@
   text-decoration: none;
 }
 
-body{
-  vertical-align: middle;
-  width: 1200px;
-  height: 100%;
-}
-
 .background {
-  width: 1200px;
+  width: 100%;
   /* border: 1px solid purple; */
   margin: 0 auto;
   position: relative;
   overflow: hidden;
+  font-size: 0px;
 }
 
 
 /* 第一塊 */
 .pic{
-  height: 100vh;
   overflow: hidden;
   opacity: .6;
+  margin: 0 auto;
 }
 
 .cover{
@@ -34,8 +29,9 @@ body{
 
 .cover img{
   width: 100%;
+  height: 100vh;
   position: relative;
-  top: -950px;
+  object-fit: cover;
 }
 
 .all_title{
@@ -69,7 +65,8 @@ color: #003A2C;
 
 /* 第二塊 */
 .background2{
-  width: 1200px;
+  width: 100%;
+  height: auto;
   /* height: 600px; */
   border: 1px solid transparent;
   margin: 0 auto;
@@ -78,14 +75,19 @@ color: #003A2C;
   overflow: hidden;
 }
 
+.background2_content{
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+}
+
 /* 調整導覽列 */
 .fm_bar{
   font-size: 16px;
   display: flex;
   justify-content: center;
-  color: white;
   background-color: #BD3B47;
-  width: 600px;
+  width: 70vw;
   padding: 10px 0;
   margin: 0 auto;
   border-radius: 25px;
@@ -95,7 +97,7 @@ color: #003A2C;
 }
 
 .fm_bar p:nth-child(2){
-  padding: 0 80px;
+  padding: 0 10%;
 }
 
 .fm_bar a{
@@ -133,7 +135,7 @@ color: #003A2C;
   font-size: 36px;
   position: absolute;
   top: 280px;
-  right: 280px;
+  right: 15%;
   letter-spacing: 8px;
 }
 
@@ -141,7 +143,7 @@ color: #003A2C;
   font-size: 20px;
   position: absolute;
   top: 360px;
-  right: 230px;
+  right: 10%;
   letter-spacing: 30px;
 }
 
@@ -177,26 +179,33 @@ color: #003A2C;
 
 /* 四張圖 */
 .catbear4{
-  width: 1200px;
-  height: 300px;
+  width: auto;
+  height: auto;
   display: flex;
+  border: 1px solid red;
 }
 
 .catbear4 img{
-  width: 300px;
+  width: 25%;
   object-fit: cover;
 }
 
 
 /* 第三塊 */
 .background3{
-  width: 1200px;
-  height: 100%;
-  display: flex;
+  width: 100%;
+  height: auto;
+  /* display: flex; */
   background-color: #191C44;
-  position: relative;
-  /* overflow: hidden; */
+  /* position: relative; */
   /* border: 10px solid red; */
+}
+
+.beer_words{
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
 }
 
 /* 調整文字 */
@@ -239,6 +248,7 @@ color: #003A2C;
   left: 400px;
   top: 100px;
   border-radius: 5px;
+  /* border: 1px solid red; */
   /* box-shadow: 2px 2px 1px black; */
 }
 
@@ -254,11 +264,11 @@ color: #003A2C;
 
 /* 第四塊 */
 .background4{
-  width: 1200px;
-  height: 100%;
+  width: 100%;
+  height: auto;
   background-color: #EDE0D8;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 
   /* 幫button置中 */
   display: flex;
@@ -318,3 +328,215 @@ color: #003A2C;
 .beer_content1:hover img,.beer_content2:hover img,.beer_content3:hover img{
   transform: translateY(-20px);
 }
+
+
+
+/* RWD調整 */
+
+@media screen and (min-width: 1200px){
+  .fm_bar{
+    width: 40vw;
+  }
+
+  .catbear4{
+    height: 70vh;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+  /* 第二塊 */
+  .background2_content, .beer_words{
+    width: 900px;
+  }
+
+  /* 第三塊 */
+  .all_beer_word{
+    width: 500px;
+  }
+  .img1{
+    width: 150px;
+    left: 200px;
+  }
+  .img2{
+    width: 300px;
+  }
+
+  /* 第四塊 */
+  .all_beer_table div img{
+    width: 80px;
+  }
+  .all_beer_table p{
+    font-size: 14px;
+  }
+  .all_beer_table div p:last-child{
+    width: 250px;
+  }
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+  .fm_bar{
+    width: 70vw;
+  }
+
+  /* 第二塊 */
+  .background2_content, .beer_words{
+    width: 700px;
+  }
+
+  /* 第三塊 */
+  .all_beer_word{
+    width: 400px;
+    padding-left: 0;
+  }
+
+  .img1{
+    width: 150px;
+    left: 150px;
+  }
+  .img2{
+    width: 250px;
+    left: 60px;
+  }
+
+  /* 第四塊 */
+  .all_beer_table div img{
+    width: 80px;
+  }
+  .all_beer_table p{
+    font-size: 14px;
+  }
+  .all_beer_table div p:last-child{
+    width: 200px;
+  }
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+  .fm_bar{
+    width: 70vw;
+  }
+  /* 第二塊 */
+  .background2_content, .beer_words{
+    width: 500px;
+  }
+  .beer_title img{
+    width: 70%;
+  }
+
+  .beer_p1{
+    font-size: 24px;
+  }
+
+  .beer_p2{
+    font-size: 14px;
+    letter-spacing: 10px;
+  }
+
+  /* 第三塊 */
+  .all_beer_word{
+    width: 500px;
+    padding-left: 0;
+    padding-bottom: 50px;
+    padding-top: 100px;
+  }
+  .beer_words{
+    flex-direction: column;
+  }
+  .beer_img{
+    padding-bottom: 100px;
+    margin: 0 auto;
+  }
+
+  .img1{
+    position: static;
+    width: 100px;
+    margin-left: 10px;
+  }
+  .img2{
+    position: static;
+    width: 300px;
+  }
+
+  /* 第四塊 */
+  .all_beer_table div img{
+    width: 60px;
+  }
+  .all_beer_table p{
+    font-size: 10px;
+    line-height: 20px;
+  }
+  .all_beer_table div p:last-child{
+    width: 130px;
+    line-height: 30px;
+  }
+  .beer_content1, .beer_content2, .beer_content3{
+    margin: 60px 10px;
+  }
+}
+
+@media screen and (max-width: 575px){
+  .fm_bar{
+    width: 80vw;
+  }
+
+  /* 第二塊 */
+  .background2_content, .beer_words{
+    width: 100%;
+  }
+  .beer_title img{
+    width: 70%;
+  }
+  .beer_p1{
+    font-size: 24px;
+  }
+  .beer_p2{
+    font-size: 14px;
+    letter-spacing: 10px;
+  }
+
+  /* 第三塊 */
+  .all_beer_word{
+    width: 90%;
+    padding-left: 0;
+    padding-bottom: 50px;
+    padding-top: 100px;
+  }
+  .beer_words{
+    flex-direction: column;
+  }
+  .beer_img{
+    padding-bottom: 100px;
+    margin: 0 auto;
+  }
+
+  .img1{
+    position: static;
+    width: 100px;
+    margin-left: 10px;
+  }
+  .img2{
+    position: static;
+    width: 300px;
+  }
+
+  /* 第四塊 */
+  .all_beer_table div img{
+    width: 60px;
+  }
+  .all_beer_table p{
+    font-size: 10px;
+    line-height: 20px;
+  }
+  .all_beer_table div p:last-child{
+    width: 130px;
+    line-height: 30px;
+  }
+  .beer_content1, .beer_content2, .beer_content3{
+    margin: 60px 10px;
+  }
+
+}
+
+/* RWD結束 */

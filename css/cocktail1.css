@@ -2,39 +2,33 @@
 @import "./cocktail2.css";
 *{
   box-sizing: border-box;
-  margin: 0;
-  text-decoration: none;
   font-weight: bold;
-}
-
-body{
-  width: 1200px;
-  height: auto;
-  /* font-size: 0px; */
+  text-decoration: none;
 }
 
 .background {
-  width: 1200px;
+  width: 100%;
   height: 100%;
   /* border: 1px solid yellow; */
   margin: 0 auto;
   position: relative;
+  font-size: 0px;
 }
 
 .pic{
-  height: 100vh;
+  width: 100%;
   overflow: hidden;
   opacity: .7;
 }
 
-.cover{
-  position: relative;
+.pic img{
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
 }
 
-.cover img{
-  width: 100%;
+.cover{
   position: relative;
-  top: -400px;
 }
 
 .all_title{
@@ -65,3 +59,11 @@ body{
   top: 80px;
   color: #BD3B47;
 }
+
+/* RWD調整 */
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+  
+}
+
+/* RWD結束 */

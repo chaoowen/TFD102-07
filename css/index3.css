@@ -1,5 +1,5 @@
 .background3{
-  width: 1200px;
+  width: 100%;
   /* border: 1px solid purple; */
   margin: 0 auto;
   height: 700px;
@@ -100,4 +100,21 @@
   /* border:1px solid yellow; */
   width: 500px;
   line-height: 70px;
+}
+
+/* RWD */
+
+@media screen and (max-width: 575px){
+  .background3{
+    height: 100px;
+  }
+
+  .all_2img{
+    flex-direction: column;
+  }
+
+  .all_2img .img2_left,.all_2img .img2_right{
+    width: 100%;
+    height: 700px;
+  }
 }

@@ -7,31 +7,28 @@
   text-decoration: none;
 }
 
-body{
-  width: 1200px;
-  height: 100%;
-}
-
 .background{
-  width: 1200px;
+  width: 100%;
   /* border: 1px solid purple; */
   margin: 0 auto;
   position: relative;
+  font-size: 0;
 }
 
 .pic{
-  height: 100vh;
   overflow: hidden;
-  /* opacity: .8; */
+  height: auto;
 }
 
 .cover{
   position: relative;
 }
 
-.cover img{
+.pic img{
   width: 100%;
+  height: 100vh;
   position: relative;
+  object-fit: cover;
 }
 
 /* 新增背景圖遮罩 */
