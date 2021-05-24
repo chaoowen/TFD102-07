@@ -104,17 +104,35 @@
 
 /* RWD */
 
-@media screen and (max-width: 575px){
+@media screen and (min-width: 576px) and (max-width: 767px){
   .background3{
-    height: 100px;
+    height: 100%;
   }
 
   .all_2img{
+    display: flex;
     flex-direction: column;
   }
 
   .all_2img .img2_left,.all_2img .img2_right{
     width: 100%;
-    height: 700px;
+    height: 50vh;
+  }
+
+}
+
+@media screen and (max-width: 575px){
+  .background3{
+    height: 100%;
+  }
+
+  .all_2img{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .all_2img .img2_left,.all_2img .img2_right{
+    width: 100%;
+    height: 50vh;
   }
 }

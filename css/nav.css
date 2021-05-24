@@ -198,7 +198,7 @@
     width: 100px;
   }
   .big>a:first-child{
-    left: 0;
+    left: 10px;
     transform: translateX(0);
   }
   .all_nav{

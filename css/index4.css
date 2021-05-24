@@ -148,10 +148,6 @@
     padding-bottom: 30px;
   }
 
-  .footer_reserve p{
-    font-size: 20px;
-  }
-
   .map a img{
     width: 280px;
     height: 120px;
@@ -171,7 +167,7 @@
     padding-bottom: 30px;
   }
   .footer_reserve p{
-    font-size: 20px;
+    font-size: 24px;
   }
 
   .footer_content{
@@ -200,13 +196,23 @@
 
   .footer_content{
     display: flex;
-    border: 10px solid red;
     flex-direction: column;
   }
 
   .footer_word p, .tibame_footer p{
     line-height: 20px;
-    font-size: 6px;
+  }
+
+  .footer_word {
+    padding-left: 0;
+  }
+
+  .map a img{
+    margin: 30px 0;
+  }
+
+  .tibame_footer{
+    padding: 0 80px;
   }
 
 }

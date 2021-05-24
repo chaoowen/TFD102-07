@@ -54,3 +54,12 @@
   left: 0;
   z-index: 0;
 }
+
+/* RWD */
+@media screen and (max-width: 575px){
+/* 第一塊 */
+.cover>div>p{
+  font-size: 80px;
+}
+
+}

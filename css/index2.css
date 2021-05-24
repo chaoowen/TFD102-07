@@ -11,7 +11,7 @@
 
 /* 文字 */
  .all_thisislanzi{
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
   width: 80%;
   padding: 80px 100px 80px 0;
   background-color: #BD3B47;
@@ -66,11 +66,6 @@
 }
 
 /* 中間字 */
-.threedrink_txt{
-  /* font-size: 100px; */
-  /* position: absolute; */
-  /* text-align: center; */
-}
 
 .threedrink_txt{
   font-size: 100px;
@@ -93,16 +88,47 @@
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 991px){
+  .all_thisislanzi{
+   width: 100%;
+   padding: 80px 30px;
+  }
+  .threedrink_pic img{
+    width: 30%;
+  }
+}
+
 @media screen and (min-width: 576px) and (max-width: 767px){
   .all_thisislanzi{
    width: 100%;
-   padding-left: 0;
+   padding: 80px 20px;
+  }
+
+  .threedrink_pic img{
+    width: 30%;
   }
 }
 
 @media screen and (max-width: 575px){
   .all_thisislanzi{
    width: 100%;
-   padding-left: 0;
+   padding: 80px 20px;
   }
+
+  .threedrink_pic img{
+    width: 30%;
+  }
+
+  .threedrink_pic {
+    padding-top: 70px;
+  }
+
+  .threedrink{
+    height: 500px;
+  }
+
+  .threedrink_txt{
+    font-size: 40px;
+  }
+
 }
