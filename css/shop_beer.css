@@ -182,7 +182,7 @@ color: #003A2C;
   width: auto;
   height: auto;
   display: flex;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .catbear4 img{

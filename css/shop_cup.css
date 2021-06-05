@@ -556,7 +556,7 @@ color: #003A2C;
 
   .how_to_use_word{
     width: 90%;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     display: flex;
     flex-direction: column;
   }

@@ -116,7 +116,7 @@
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px){
-  
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px){
@@ -147,6 +147,10 @@
 
   .fm_hot {
     margin: 0 20px;
-
-}
+    width: 290px;
+    margin: 0 auto;
+  }
+  .background2 {
+    height: 600px;
+  }
 }
