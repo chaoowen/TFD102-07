@@ -107,12 +107,21 @@
   .threedrink_pic img{
     width: 30%;
   }
+
+  .threedrink_txt{
+    font-size: 80px;
+  }
 }
 
-@media screen and (max-width: 575px){
+@media screen and (max-width: 575.9px){
   .all_thisislanzi{
    width: 100%;
    padding: 80px 20px;
+  }
+
+  .all_thisislanzi>div>p{
+   font-size: 16px;
+   line-height: 35px;
   }
 
   .threedrink_pic img{

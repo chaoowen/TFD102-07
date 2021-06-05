@@ -17,15 +17,15 @@
           <a href="reservation.html">Reserve</a>
           <label for="switch"><a class="nav_btn"></a></label>
 
-          <input type="checkbox" id="switch">
-
           <!-- 漢堡列 -->
           <div class="hamberger_nav">
-            <div class="hamberger_items">
-              <a href="menu_food_all.html">I. 懶系餐點</a>
-              <a href="menu_cocktail.html">II. 懶系特調</a>
-              <a href="aboutus1.html">III. 關於懶系</a>
-              <a href="shop_beer.html">IV. 懶系購物</a>
+            <div class="nav_cover">
+              <div class="hamberger_items">
+                <a href="menu_food_all.html">I. 懶系餐點</a>
+                <a href="menu_cocktail.html">II. 懶系特調</a>
+                <a href="aboutus1.html">III. 關於懶系</a>
+                <a href="shop_beer.html">IV. 懶系購物</a>
+              </div>
             </div>
           </div>
         </div>
@@ -168,7 +168,18 @@
         </div>
       </div>
 
-  </div>
+    </div>
+
+    <script>
+      // 漢堡鈕的點擊改變
+      var btn_nav = document.getElementsByClassName("nav_btn")[0];
+      btn_nav.addEventListener("click", function(){
+        var hamburger_nav = document.getElementsByClassName("hamberger_nav")[0];
+        hamburger_nav.classList.toggle("-on");
+        btn_nav.classList.toggle("cancel");
+      });
+      // ===========漢堡紐結束
+    </script>
 
   </body>
 </html>

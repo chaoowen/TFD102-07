@@ -9,7 +9,7 @@
 /* 第二塊 */
 .background2{
   width: 100%;
-  height: 500px;
+  /* height: 500px; */
   /* border: 1px solid purple; */
   margin: 0 auto;
   position: relative;
@@ -38,8 +38,13 @@
   padding: 0 60px;
 }
 
+.fm_bar p{
+  margin: 0;
+}
+
 .fm_bar a{
   color: #E29C3E;
+  text-decoration: none;
 }
 
 /* 下底線 */
@@ -54,6 +59,7 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 30px;
+  padding: 0 10px;
 }
 
 .customize_word h4{
@@ -67,6 +73,7 @@
   font-size: 18px;
   line-height: 40px;
   color: #EDE0D8;
+  text-align: center;
 }
 
 
@@ -165,21 +172,21 @@
 
 /* 表格文字 */
 .wine_flavor{
-  margin: 0 auto;
-  border-spacing: 35px;
+  /* border: 1px solid red; */
 }
 
-.wine_flavor tr td{
+.col-4 ,.col-sm-2{
   border: 1px solid #BD3B47;
-  padding: 20px 40px;
+  padding: 20px 10px;
   text-align: center;
   border-radius: 5px;
+  margin: 20px 10px;
 
   cursor: pointer;
 }
 
 /* 滑鼠點擊時顯示邊框 */
-.wine_flavor tr td:focus{
+.flavor:focus{
   color: #EDE0D8;
   background-color: #BD3B47;
 }
@@ -253,4 +260,85 @@
   line-height: 40px;
 
   margin: 80px auto;
+}
+
+/* RWD調整 */
+
+@media screen and (min-width: 1200px){
+  .fm_bar{
+    width: 40vw;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+
+  /* 第一塊 */
+  .fm_bar{
+    width: 70vw;
+  }
+  /* 第三塊 */
+  .wine_pic{
+    width: 600px;
+  }
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+  /* 第一塊 */
+  .fm_bar{
+    width: 70vw;
+  }
+  .fm_bar p:nth-child(2n) {
+    padding: 0 10px;
+  }
+  /* 第三塊 */
+  .wine_pic{
+    width: 550px;
+  }
+
+}
+
+@media screen and (max-width: 575.9px){
+  /* 第一塊 */
+  .fm_bar{
+    width: 80vw;
+  }
+  .fm_bar p:nth-child(2) {
+    padding: 0 10px;
+  }
+  .fm_bar{
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+  }
+  .fm_bar p:nth-child(2n){
+    opacity: 0;
+  }
+
+  /* 第三塊 */
+  .wine_pic div img{
+    /* border: 1px solid red; */
+    width: 100px;
+    height: 140px;
+    object-fit: contain;
+  }
+  .wine_pic{
+    /* border: 1px solid red; */
+    width: 100%;
+  }
+  .wine_pic div{
+    margin: 20px 5px;
+  }
+  .background3>a:first-child, .background4>a:first-child{
+    padding-left: 10px;
+  }
+
+  /* 第五塊 */
+  .background5 .wine_result img{
+    width: 100%;
+  }
 }

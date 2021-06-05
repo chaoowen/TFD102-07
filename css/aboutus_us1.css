@@ -72,3 +72,12 @@
 .title p{
   color: #EDE0D8;
 }
+
+@media screen and (max-width: 575.9px){
+  /* 主頁字體 */
+  .title p{
+    font-size: 48px;
+  }
+  .title{
+    padding: 40px 40px;
+  }

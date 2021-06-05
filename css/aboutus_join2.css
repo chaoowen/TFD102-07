@@ -54,7 +54,6 @@
   display: flex;
   flex-direction: column;
   color: #EDE0D8;
-  /* width: 100%; */
   margin-bottom: 100px;
 }
 
@@ -102,13 +101,15 @@
 }
 
 .join1 ,.join2{
-  width: 450px;
+  /* width: 200px; */
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-
+.join2{
+  margin-left: 150px;
+}
 
 /* 滑鼠移過出現放大效果 */
 /* 左 */
@@ -135,4 +136,68 @@
 
 .join2 div{
   transition: .8s;
+}
+
+/* RWD調整 */
+
+@media screen and (min-width: 1200px){
+  .aboutus_bar{
+    width: 40vw;
+  }
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+  .aboutus_bar{
+    width: 70vw;
+  }
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+  .aboutus_bar{
+    width: 70vw;
+  }
+  .aboutus_bar p:nth-child(2n) {
+    padding: 0 10px;
+  }
+  .join2{
+    margin-left: 50px;
+  }
+
+}
+
+@media screen and (max-width: 575.9px){
+  .aboutus_bar{
+    width: 80vw;
+  }
+  .aboutus_bar{
+    width: 100vw;
+    margin: 50px 10px;
+  }
+  .aboutus_bar{
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+  }
+  .aboutus_bar p:nth-child(2n){
+    opacity: 0;
+  }
+
+  .join_word{
+    display: flex;
+    flex-direction: column;
+  }
+  .join2{
+    margin-left: 0;
+  }
+  .join1{
+    margin-bottom: 50px;
+  }
+
 }

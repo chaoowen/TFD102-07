@@ -1,7 +1,7 @@
 
 /* intro塊 */
 .background2{
-  width: 1200px;
+  width: 100%;
   /* border: 1px solid purple; */
   margin: 0 auto;
   position: relative;
@@ -31,7 +31,7 @@
 
 /* 表格 */
 .background3{
-  width: 1200px;
+  width: 100%;
   /* border: 1px solid purple; */
   margin: 0 auto;
   position: relative;
@@ -57,6 +57,7 @@
   /* border: 1px solid yellow; */
   letter-spacing: 2px;
   line-height: 1.8rem;
+  text-align: center;
 }
 
 .explain p:first-child{
@@ -70,8 +71,6 @@
 /* 表格 */
 
 .all_form{
-  /* width: 280px; */
-  /* height: auto; */
   /* border: 1px solid blue; */
   line-height: 50px;
   font-size: 16px;
@@ -121,4 +120,30 @@ input, select{
 /* 調整欄寬 */
 .name{
   width: 170px;
+}
+
+/* RWD調整 */
+
+@media screen and (min-width: 1200px){
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+
+}
+
+@media screen and (max-width: 575.9px){
+  .intro p:first-child{
+    width: 160px;
+    margin: 0 auto;
+  }
+
 }

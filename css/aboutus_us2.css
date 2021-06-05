@@ -19,7 +19,7 @@
   justify-content: center;
   color: white;
   background-color: #DB983D;
-  width: 600px;
+  width: 70vw;
   padding: 10px 0;
   margin: 0 auto;
   border-radius: 25px;
@@ -35,20 +35,20 @@
   color: #EDE0D8;
 }
 
-
 /* 下底線 */
 
 .aboutus_bar p:first-child{
   border-bottom: 2px solid #BD3B47;
 }
 
-
 /* 內文 */
 .aboutus_content{
   /* border: 1px solid yellow; */
   display: flex;
   flex-direction: column;
-  width: 700px;
+  /* flex-direction: center; */
+  align-items: center;
+  vertical-align: middle;
   color: #EDE0D8;
   margin: 80px 0;
 }
@@ -58,7 +58,7 @@
   /* border: 1px solid white; */
   text-align: right;
   letter-spacing: 7px;
-  width: 700px;
+  padding-bottom: 5%;
 }
 
 .content{
@@ -70,4 +70,56 @@
   font-size: 16px;
   line-height: 30px;
   padding-bottom: 30px;
+}
+
+/* RWD調整 */
+
+@media screen and (min-width: 1200px){
+  .aboutus_bar{
+    width: 40vw;
+  }
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+  .aboutus_bar{
+    width: 70vw;
+  }
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+  .aboutus_bar{
+    width: 70vw;
+  }
+  .aboutus_bar p:nth-child(2n) {
+    padding: 0 10px;
+  }
+  .content{
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 575.9px){
+  /* 主頁字體 */
+  .aboutus_bar{
+    width: 100vw;
+    margin: 50px 10px;
+  }
+  .content{
+    width: 95vw;
+  }
+  .aboutus_bar{
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+  }
+  .aboutus_bar p:nth-child(2n){
+    opacity: 0;
+  }
 }

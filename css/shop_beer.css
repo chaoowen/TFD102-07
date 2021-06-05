@@ -121,7 +121,7 @@ color: #003A2C;
 
 .beer_title h4{
   font-size: 28px;
-  margin-top: 150px;
+  margin-top: 10%;
   color: #EDE0D8;
 }
 
@@ -134,7 +134,7 @@ color: #003A2C;
 .beer_p1{
   font-size: 36px;
   position: absolute;
-  top: 280px;
+  top: 30%;
   right: 15%;
   letter-spacing: 8px;
 }
@@ -142,7 +142,7 @@ color: #003A2C;
 .beer_p2{
   font-size: 20px;
   position: absolute;
-  top: 360px;
+  top: 40%;
   right: 10%;
   letter-spacing: 30px;
 }
@@ -476,9 +476,17 @@ color: #003A2C;
   }
 }
 
-@media screen and (max-width: 575px){
+@media screen and (max-width: 575.9px){
+  /* 主頁字體 */
+  .title P{
+    font-size: 48px;
+  }
+  /* 調整 */
   .fm_bar{
     width: 80vw;
+  }
+  .fm_bar p:nth-child(2) {
+    padding: 0 10px;
   }
 
   /* 第二塊 */
@@ -490,15 +498,20 @@ color: #003A2C;
   }
   .beer_p1{
     font-size: 24px;
+    right: 10%;
   }
   .beer_p2{
     font-size: 14px;
     letter-spacing: 10px;
+    right: 5%;
   }
+
 
   /* 第三塊 */
   .all_beer_word{
+    /* border: 10px solid red; */
     width: 90%;
+    margin: 0 auto;
     padding-left: 0;
     padding-bottom: 50px;
     padding-top: 100px;
@@ -508,33 +521,43 @@ color: #003A2C;
   }
   .beer_img{
     padding-bottom: 100px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .img1{
     position: static;
-    width: 100px;
-    margin-left: 10px;
+    width: 200px;
   }
   .img2{
     position: static;
     width: 300px;
+    margin-bottom: 50px;
   }
 
   /* 第四塊 */
+  .all_beer_table{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .all_beer_table div img{
-    width: 60px;
+    width: 100px;
   }
   .all_beer_table p{
-    font-size: 10px;
-    line-height: 20px;
+    font-size: 20px;
+    line-height: 40px;
   }
   .all_beer_table div p:last-child{
-    width: 130px;
+    width: 100%;
     line-height: 30px;
   }
   .beer_content1, .beer_content2, .beer_content3{
-    margin: 60px 10px;
+    margin: 40px 10px;
+    width: 80%;
   }
 
 }

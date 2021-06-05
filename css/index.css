@@ -56,7 +56,7 @@
 }
 
 /* RWD */
-@media screen and (max-width: 575px){
+@media screen and (max-width: 575.9px){
 /* 第一塊 */
 .cover>div>p{
   font-size: 80px;

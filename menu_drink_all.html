@@ -17,15 +17,15 @@
           <a href="reservation.html">Reserve</a>
           <label for="switch"><a class="nav_btn"></a></label>
 
-          <input type="checkbox" id="switch">
-
           <!-- 漢堡列 -->
           <div class="hamberger_nav">
-            <div class="hamberger_items">
-              <a href="menu_food_all.html">I. 懶系餐點</a>
-              <a href="menu_cocktail.html">II. 懶系特調</a>
-              <a href="aboutus1.html">III. 關於懶系</a>
-              <a href="shop_beer.html">IV. 懶系購物</a>
+            <div class="nav_cover">
+              <div class="hamberger_items">
+                <a href="menu_food_all.html">I. 懶系餐點</a>
+                <a href="menu_cocktail.html">II. 懶系特調</a>
+                <a href="aboutus1.html">III. 關於懶系</a>
+                <a href="shop_beer.html">IV. 懶系購物</a>
+              </div>
             </div>
           </div>
         </div>
@@ -49,158 +49,186 @@
         </div>
       </div>
 
-      <!-- 第二塊 -->
-      <div class="background2">
-        <div class="hamberger_bg">
-          <div class="fm_bar">
-            <a href="menu_food_all.html">大口吃飯</a>
-            <p>｜</p>
-            <p>大口飲酒</p>
-          </div>
-          <div class="fm_title">懶系飲品菜單 Drink menu</div>
-          <div class="fm_info">
-            <ul class="fm_hot">
-              <li>熱門排行</li>
-              <li>1. 黛綺莉 Daiquiri</li>
-              <li>2. 柯夢波丹 Cosmopolitan</li>
-              <li>3. 摩西多 Mojito</li>
-              <p class="ribbon">Hot Sale</p>
-            </ul>
+      <!-- 調整滑鼠滾動一次動整個螢幕 -->
+      <div id="fullpage">
+
+        <!-- 第二塊 -->
+        <div class="background2">
+          <div class="hamberger_bg">
+            <div class="fm_bar">
+              <a href="menu_food_all.html">大口吃飯</a>
+              <p>｜</p>
+              <p>大口飲酒</p>
+            </div>
+            <div class="fm_title">懶系飲品菜單 Drink menu</div>
+            <div class="fm_info">
+              <ul class="fm_hot">
+                <li>熱門排行</li>
+                <li>1. 黛綺莉 Daiquiri</li>
+                <li>2. 柯夢波丹 Cosmopolitan</li>
+                <li>3. 摩西多 Mojito</li>
+                <p class="ribbon">Hot Sale</p>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- 第三塊 -->
-      <div class="background3">
-        <div class="all_fm_snack">
-            <img src="./pictures/menu_drink/drink1.jpg">
-          <div class="fm_snack3">
-            <p>Cocktail</p>
-            <div class="fm_snack_word3">
-              <div>
-                <p>馬丁尼 Martini</p>
-                <p>(琴酒/苦艾酒)</p>
-                <p>瑪格麗特 Margarita</p>
-                <p>(龍舌蘭/橙酒/檸檬汁/鹽口杯)</p>
-                <p>柯夢波丹 Cosmopolitan</p>
-                <p>(伏特加/澄酒/檸檬汁/蔓越莓汁)</p>
-                <p>性感海灘 Sex on the beach</p>
-                <p>(伏特加/水蜜桃酒/蔓越莓汁/鳳梨汁)</p>
-                <p>血腥瑪麗 Bloody Mary</p>
-                <p>(伏特加 /番茄汁/檸檬汁/辣醬/鹽)</p>
-              </div>
-              <div>
-                <p>黛綺莉 Daiquiri</p>
-                <p>(蘭姆酒/檸檬汁/糖漿)</p>
-                <p>摩西多 Mojito</p>
-                <p>(蘭姆酒/白砂糖/蘇打水/薄荷/萊姆汁)</p>
-                <p>長島冰茶 Long Island Iced Tea</p>
-                <p>(蘭姆酒/伏特加/琴酒/龍舌蘭/白柑香酒/
-                檸檬汁/可樂)</p>
-                <p>內格羅尼 Negroni</p>
-                <p>(琴酒/金巴利/甜苦艾酒)</p>
-                <p>古典雞尾酒 Old Fashioned</p>
-                <p>(威士忌/糖/苦精)</p>
+        <!-- 第三塊 -->
+        <div class="background3 section1">
+          <div class="all_fm_snack">
+            <picture>
+              <source srcset="./pictures/menu_drink/new_drink1.jpg" media="(max-width: 992px)">
+              <img src="./pictures/menu_drink/drink1.jpg">
+            </picture>
+            <div class="fm_snack3">
+              <p>Cocktail</p>
+              <div class="fm_snack_word3">
+                <div>
+                  <p>馬丁尼 Martini</p>
+                  <p>(琴酒/苦艾酒)</p>
+                  <p>瑪格麗特 Margarita</p>
+                  <p>(龍舌蘭/橙酒/檸檬汁/鹽口杯)</p>
+                  <p>柯夢波丹 Cosmopolitan</p>
+                  <p>(伏特加/澄酒/檸檬汁/蔓越莓汁)</p>
+                  <p>性感海灘 Sex on the beach</p>
+                  <p>(伏特加/水蜜桃酒/蔓越莓汁/鳳梨汁)</p>
+                  <p>血腥瑪麗 Bloody Mary</p>
+                  <p>(伏特加 /番茄汁/檸檬汁/辣醬/鹽)</p>
+                </div>
+                <div>
+                  <p>黛綺莉 Daiquiri</p>
+                  <p>(蘭姆酒/檸檬汁/糖漿)</p>
+                  <p>摩西多 Mojito</p>
+                  <p>(蘭姆酒/白砂糖/蘇打水/薄荷/萊姆汁)</p>
+                  <p>長島冰茶 Long Island Iced Tea</p>
+                  <p>(蘭姆酒/伏特加/琴酒/龍舌蘭/白柑香酒/
+                  檸檬汁/可樂)</p>
+                  <p>內格羅尼 Negroni</p>
+                  <p>(琴酒/金巴利/甜苦艾酒)</p>
+                  <p>古典雞尾酒 Old Fashioned</p>
+                  <p>(威士忌/糖/苦精)</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- 第四塊 -->
-      <div class="background4">
-        <div class="all_fm_snack">
-          <img src="./pictures/menu_drink/drink2.jpg">
-          <div class="fm_snack">
-            <p>Wine</p>
-            <div class="fm_snack_word">
-              <div>
-                <p class="bo">生啤酒 Draft Beer</p>
-                <p class="bo">可樂娜 Corona</p>
-                <p>海尼根 </p>
-                <p class="bo">Heineken Original / Light</p>
-                <p>奶油蜂蜜啤酒</p>
-                <p class="bo">Creaming Honey Beer</p>
-                <p>台虎精釀 金柑檸檬沙瓦 </p>
-                <p class="bo">Kumquat Lemon Formosawa</p>
-              </div>
-              <div>
-                <p class="bo">紅酒 House red wine </p>
-                <p class="bo">白酒 House white wine</p>
-                <p class="bo">香檳 champagne</p>
-                <p>約翰走路/黑牌 </p>
-                <p class="bo">Johnnie Walker Blake Label</p>
-                <p>約翰走路/綠牌 </p>
-                <p class="bo">Johnnie Walker Green Label</p>
-                <p>麥卡倫/12年 Macall1n 12Y</p>
+        <!-- 第四塊 -->
+        <div class="background4 section2">
+          <div class="all_fm_snack">
+            <picture>
+              <source srcset="./pictures/menu_drink/new_drink2.jpg" media="(max-width: 992px)">
+              <img src="./pictures/menu_drink/drink2.jpg">
+            </picture>
+            <div class="fm_snack">
+              <p>Wine</p>
+              <div class="fm_snack_word">
+                <div>
+                  <p class="bo">生啤酒 Draft Beer</p>
+                  <p class="bo">可樂娜 Corona</p>
+                  <p>海尼根 </p>
+                  <p class="bo">Heineken Original / Light</p>
+                  <p>奶油蜂蜜啤酒</p>
+                  <p class="bo">Creaming Honey Beer</p>
+                  <p>台虎精釀 金柑檸檬沙瓦 </p>
+                  <p class="bo">Kumquat Lemon Formosawa</p>
+                </div>
+                <div>
+                  <p class="bo">紅酒 House red wine </p>
+                  <p class="bo">白酒 House white wine</p>
+                  <p class="bo">香檳 champagne</p>
+                  <p>約翰走路/黑牌 </p>
+                  <p class="bo">Johnnie Walker Blake Label</p>
+                  <p>約翰走路/綠牌 </p>
+                  <p class="bo">Johnnie Walker Green Label</p>
+                  <p>麥卡倫/12年 Macall1n 12Y</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- 第五塊 -->
-      <div class="background5">
-        <div class="all_fm_snack">
-          <img src="./pictures/menu_drink/drink3.jpg">
-          <div class="fm_snack">
-            <p>Soft Drink</p>
-            <div class="fm_snack_word">
-              <div>
-                <p>可樂 Coke / 雪碧 Sprite</p>
-                <p>氣泡礦泉水 Sparkling Water</p>
-                <p>冰紅茶 Ice Tea</p>
-                <p>冰百香果風味茶 Passion Fruit Flavored Ice Tea</p>
-                <p>冰荔枝風味茶 Lychee Flavored Ice Tea</p>
-                <p>冰香橙風味茶 Orange Flavored Ice Tea</p>
-                <p>冰伯爵奶茶 Grey Flavored Ice Milk Tea</p>
-                <p>冰焦糖奶茶 Caramel Flavored Ice Milk Tea</p>
+        <!-- 第五塊 -->
+        <div class="background5 section3">
+          <div class="all_fm_snack">
+            <picture>
+              <source srcset="./pictures/menu_drink/new_drink3.jpg" media="(max-width: 992px)">
+              <img src="./pictures/menu_drink/drink3.jpg">
+            </picture>
+            <div class="fm_snack">
+              <p>Soft Drink</p>
+              <div class="fm_snack_word">
+                <div>
+                  <p>可樂 Coke / 雪碧 Sprite</p>
+                  <p>氣泡礦泉水 Sparkling Water</p>
+                  <p>冰紅茶 Ice Tea</p>
+                  <p>冰百香果風味茶 Passion Fruit Flavored Ice Tea</p>
+                  <p>冰荔枝風味茶 Lychee Flavored Ice Tea</p>
+                  <p>冰香橙風味茶 Orange Flavored Ice Tea</p>
+                  <p>冰伯爵奶茶 Grey Flavored Ice Milk Tea</p>
+                  <p>冰焦糖奶茶 Caramel Flavored Ice Milk Tea</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
+
+      <!-- 調整滑鼠滾動一次動整個螢幕 -->
       </div>
 
       <!-- footer塊(css是index4) -->
-        <div class="background_footer">
+      <div class="background_footer">
 
-          <div class="footer_reserve">
-            <p>現在就訂位，釋放你的懶</p>
-            <p>Come to LANZI. Make a reservation NOW.</p>
-            <div class="footer_btn">
-              <a href="reservation.html"><p>Reserve</p></a>
-            </div>
-          </div>
-          <div class="bg">
-            <div class="footer_contactus">
-              <div class="footer_content">
-                <div class="map">
-                  <a href="https://reurl.cc/NXvmMp"><img src="./pictures/index/storemap.png"></a>
-                </div>
-                <div class="footer_word">
-                  <div>
-                    <p>LANZI. 懶系 ｜ 聯絡我們</p>
-                    <a href="###"><img src="./pictures/index/footer_FB.png"></a>
-                    <a href="###"><img src="./pictures/index/footer_IG.png"></a>
-                  </div>
-                  <div>
-                    <p>地址：台北市大安區忠孝東路四段248巷2-4號</p>
-                    <p>電話：02 - 2730 - 3388</p>
-                    <p>營業時間：平日16:00-00:00 假日12:00-00:00 ｜ 每周一公休</p>
-                  </div>
-                </div>
-              </div>
-              <div class="tibame_footer">
-                <p>本網站為緯育TibaMe前端設計工程師班第68期學員專題作品，本平台僅供學習、展示之用。</p>
-                <p>若有侵權疑慮，您可以私訊<a href="https://www.facebook.com/webindex/">TibaMe-前端設計工程師養成班</a>，後續會由專人協助處理</p>
-              </div>
-            </div>
-          </div>
-          <div class="ft_logo">
-            <img src="./pictures/index/logo_foot_yellow.png">
+        <div class="footer_reserve">
+          <p>現在就訂位，釋放你的懶</p>
+          <p>Come to LANZI. Make a reservation NOW.</p>
+          <div class="footer_btn">
+            <a href="reservation.html"><p>Reserve</p></a>
           </div>
         </div>
+        <div class="bg">
+          <div class="footer_contactus">
+            <div class="footer_content">
+              <div class="map">
+                <a href="https://reurl.cc/NXvmMp"><img src="./pictures/index/storemap.png"></a>
+              </div>
+              <div class="footer_word">
+                <div>
+                  <p>LANZI. 懶系 ｜ 聯絡我們</p>
+                  <a href="###"><img src="./pictures/index/footer_FB.png"></a>
+                  <a href="###"><img src="./pictures/index/footer_IG.png"></a>
+                </div>
+                <div>
+                  <p>地址：台北市大安區忠孝東路四段248巷2-4號</p>
+                  <p>電話：02 - 2730 - 3388</p>
+                  <p>營業時間：平日16:00-00:00 假日12:00-00:00 ｜ 每周一公休</p>
+                </div>
+              </div>
+            </div>
+            <div class="tibame_footer">
+              <p>本網站為緯育TibaMe前端設計工程師班第68期學員專題作品，本平台僅供學習、展示之用。</p>
+              <p>若有侵權疑慮，您可以私訊<a href="https://www.facebook.com/webindex/">TibaMe-前端設計工程師養成班</a>，後續會由專人協助處理</p>
+            </div>
+          </div>
+        </div>
+        <div class="ft_logo">
+          <img src="./pictures/index/logo_foot_yellow.png">
+        </div>
+      </div>
+
 
     </div>
+
+    <script src="./js/fullpage/src/fullpage.js"></script>
+    <script>
+      // 漢堡鈕的點擊改變
+      var btn_nav = document.getElementsByClassName("nav_btn")[0];
+      btn_nav.addEventListener("click", function(){
+        var hamburger_nav = document.getElementsByClassName("hamberger_nav")[0];
+        hamburger_nav.classList.toggle("-on");
+        btn_nav.classList.toggle("cancel");
+      });
+      // ===========漢堡紐結束
+    </script>
   </body>
 </html>

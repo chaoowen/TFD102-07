@@ -73,10 +73,18 @@
 /* 五味調酒師 */
 .all_bartender div img{
   object-fit: cover;
-  width: 250px;
-  height: 320px;
+  /* width: 250px; */
+  /* height: 320px; */
+  width: 100%;
+  height: 100%;
   border-radius: 5px;
   border: 1px solid #EDE0D8;
+}
+
+.bar_name{
+  width: 30%;
+  height: 300px;
+  /* border: 10px solid yellow; */
 }
 
 
@@ -84,11 +92,12 @@
 .all_bartender{
   /* border: 5px solid red; */
   display: flex;
-  width: 1000px;
+  /* width: 1000px; */
   flex-wrap: wrap;
   height: auto;
   justify-content: center;
   margin-bottom: 60px;
+  padding: 0 80px
 }
 
 .all_bartender>div{
@@ -165,4 +174,60 @@
 
 .bar_name:hover .bartender_name{
   transform: translateY(0px);
+}
+
+/* RWD調整 */
+
+@media screen and (min-width: 1200px){
+  .aboutus_bar{
+    width: 40vw;
+  }
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+  .aboutus_bar{
+    width: 70vw;
+  }
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+  .aboutus_bar{
+    width: 70vw;
+  }
+  .aboutus_bar p:nth-child(2n) {
+    padding: 0 10px;
+}
+
+}
+
+@media screen and (max-width: 575.9px){
+  .aboutus_bar{
+    width: 80vw;
+  }
+  .aboutus_bar{
+    width: 100vw;
+    margin: 50px 10px;
+  }
+  .aboutus_bar{
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+  }
+  .aboutus_bar p:nth-child(2n){
+    opacity: 0;
+  }
+
+  .bartender_content {
+    margin: 60px 10px;
+  }
+  .all_bartender {
+    padding: 0;
+  }
 }

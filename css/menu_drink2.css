@@ -3,6 +3,7 @@
 @import "./menu_drink3.css";
 @import "./menu_drink4.css";
 @import "./menu_drink5.css";
+@import "../js/fullpage/src/fullpage.js";
 
 *{
   box-sizing: border-box;
@@ -76,7 +77,7 @@
   overflow: hidden;
 }
 
-.fm_rcm,.fm_hot{
+.fm_hot{
   list-style: none;
   background-color: #EDE0D8;
   border-radius: 10px;
@@ -86,14 +87,6 @@
   text-align: center;
   padding: 0;
   padding-top: 30px;
-}
-
-.fm_rcm{
-  margin-right: 200px;
-}
-
-.fm_rcm li:first-child, .fm_hot li:first-child{
-  padding-bottom: 20px;
 }
 
 /* 緞帶 */
@@ -110,4 +103,50 @@
   transform: rotate(-45deg);
   top: 25;
   left: -80px;
+}
+
+
+/* RWD調整 */
+
+@media screen and (min-width: 1200px){
+  .fm_bar{
+    width: 40vw;
+  }
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+  
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+  .fm_bar{
+    width: 70vw;
+  }
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+  .fm_bar{
+    width: 70vw;
+  }
+
+}
+
+@media screen and (max-width: 575.9px){
+  .fm_bar{
+    width: 80vw;
+  }
+  .fm_bar p:nth-child(2) {
+    padding: 0 10px;
+  }
+
+  .fm_title {
+    padding: 60px 0;
+  }
+
+  .fm_hot {
+    margin: 0 20px;
+
+}
 }

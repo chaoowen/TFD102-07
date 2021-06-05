@@ -141,7 +141,7 @@ color: #003A2C;
 /* 第二塊酒杯介紹 */
 .cup_content{
   /* border: 1px solid white; */
-  width: 1200px;
+  width: 90%;
   display: flex;
   color: #EDE0D8;
   vertical-align: middle;
@@ -204,6 +204,7 @@ color: #003A2C;
   /* border: 1px solid yellow; */
   width: 700px;
   height: auto;
+  max-width: 100%;
 }
 
 .how_to_use_word{
@@ -221,7 +222,7 @@ color: #003A2C;
 }
 
 /* 用偽元素做橫線 */
-.how_to_use>p::after{
+.how_to_use>p::after,.all_gif>h4::after{
   content: "";
   width: 120px;
   border-bottom: 1px solid black;
@@ -229,7 +230,7 @@ color: #003A2C;
   top: 50%;
 }
 
-.how_to_use>p::before{
+.how_to_use>p::before,.all_gif>h4::before{
   content: "";
   width: 120px;
   border-bottom: 1px solid black;
@@ -262,7 +263,7 @@ color: #003A2C;
 }
 
 /* 用偽元素做橫線 */
-.all_gif>h4::after{
+/* .all_gif>h4::after{
   content: "";
   width: 120px;
   border-bottom: 1px solid black;
@@ -277,7 +278,7 @@ color: #003A2C;
   position: absolute;
   top: 50%;
   left: -90%;
-}
+} */
 
 /* 圖片 */
 .gif{
@@ -383,6 +384,16 @@ color: #003A2C;
   .cup_content{
     width: 900px;
   }
+
+  /* 第二塊 */
+  .gif{
+    flex-wrap: wrap;
+    width: 700px;
+  }
+  .gif img{
+    width: 300px;
+    padding: 5px 0;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px){
@@ -416,6 +427,15 @@ color: #003A2C;
     width: 600px;
   }
 
+  .gif{
+    flex-wrap: wrap;
+    width: 700px;
+  }
+  .gif img{
+    width: 30vw;
+    padding: 5px 0;
+  }
+
   /* 第四塊 */
   .cup_info1 img, .cup_info2 img{
     width: 380px;
@@ -426,7 +446,7 @@ color: #003A2C;
 @media screen and (min-width: 576px) and (max-width: 767px){
   /* 第一塊 */
   .cup_title div p{
-    font-size: 14px;
+    padding: 0 10px;
   }
   /* 同上的部份 */
   .cup_content{
@@ -451,6 +471,10 @@ color: #003A2C;
     width: 70vw;
   }
 
+  .cup_content img{
+    width: 80%;
+  }
+
   /* 第三塊*/
   .how_to_use img{
     width: 400px;
@@ -485,11 +509,10 @@ color: #003A2C;
 
 }
 
-@media screen and (max-width: 575px){
-
-  /* 第一塊 */
-  .cup_title div p{
-    font-size: 14px;
+@media screen and (max-width: 575.9px){
+  /* 主頁字體 */
+  .title P{
+    font-size: 48px;
   }
   /* 同上的部份 */
   .cup_content{
@@ -514,27 +537,69 @@ color: #003A2C;
     width: 80vw;
   }
 
+  .fm_bar p:nth-child(2) {
+    padding: 0 10px;
+  }
+
+  .cup_title div p{
+    padding: 0 20px;
+  }
+
+  .cup_content img{
+    width: 80%;
+  }
+
   /* 第三塊*/
   .how_to_use img{
     width: 400px;
   }
 
   .how_to_use_word{
-    width: 500px;
+    width: 90%;
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .how_to_use_word div{
+    padding-bottom: 20px;
   }
 
   .gif{
     flex-wrap: wrap;
-    width: 500px;
+    width: 90%;
   }
   .gif img{
-    width: 30vw;
+    width: 33%;
     padding: 5px 0;
   }
 
+  /* 用偽元素做橫線 */
+  .how_to_use>p::after,.all_gif>h4::after{
+    width: 50px;
+  }
+
+  .how_to_use>p::before,.all_gif>h4::before{
+    width: 50px;
+    left: -35%;
+  }
+
   /* 第四塊 */
+  .cup_info1, .cup_info2{
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .cup_info1>div{
+    left: 0;
+    }
+
+  .cup_info2>div{
+    right: 0;
+  }
+
   .cup_info1 img, .cup_info2 img{
-    width: 250px;
+    width: 50%;
   }
 
   .cup_info1 div p, .cup_info2 div p{
@@ -545,7 +610,6 @@ color: #003A2C;
     font-size: 12px;
     line-height: 20px;
   }
-
 
 }
 

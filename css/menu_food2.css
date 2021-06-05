@@ -105,3 +105,69 @@
   top: 25px;
   left: -80px;
 }
+
+/* RWD調整 */
+
+@media screen and (min-width: 1200px){
+  .fm_bar{
+    width: 40vw;
+  }
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+  .fm_bar{
+    width: 70vw;
+  }
+  .fm_rcm {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+  .fm_bar{
+    width: 70vw;
+  }
+  .fm_info{
+    display: flex;
+    flex-direction: column;
+  }
+  .background2{
+    height: auto;
+  }
+  .fm_rcm, .fm_hot {
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 575.9px){
+  .fm_bar{
+    width: 80vw;
+  }
+  .fm_bar p:nth-child(2) {
+    padding: 0 10px;
+  }
+  .fm_title {
+    padding: 60px 0;
+  }
+  .fm_hot {
+    margin: 0 20px;
+  }
+  .fm_info{
+    display: flex;
+    flex-direction: column;
+  }
+  .background2{
+    height: auto;
+  }
+  .fm_rcm, .fm_hot {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 290px;
+  }
+}
