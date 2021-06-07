@@ -141,6 +141,14 @@
   margin: 80px auto;
 }
 
+/* 滑鼠特效 */
+.wine_pic div:hover{
+  position: relative;
+  top: -10px;
+  border: 1px solid #EDE0D8;
+  border-radius: 5px;
+}
+
 /* 滑鼠點擊時顯示邊框 */
 .wine_pic div:focus{
   border: 1px solid #EDE0D8;
@@ -183,6 +191,12 @@
   margin: 20px 10px;
 
   cursor: pointer;
+}
+
+/* 滑鼠特效 */
+.flavor:hover{
+  color: #EDE0D8;
+  background-color: #BD3B47;
 }
 
 /* 滑鼠點擊時顯示邊框 */

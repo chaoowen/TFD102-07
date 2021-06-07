@@ -6,6 +6,15 @@
     <title>LANZI懶系酒吧</title>
     <link rel="stylesheet" href="https://use.typekit.net/jcq7fod.css">
     <link rel="stylesheet" href="./css/index.css">
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <!-- scrollmagic -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <!-- scrollmagic結束 -->
+    <title>hamburger menu</title>
+
   </head>
   <body>
     <div class="header">
@@ -54,8 +63,8 @@
     </div>
 
     <!-- 第二塊 -->
+    <!-- 觸發點 -->
     <div class="background2">
-
       <div class="all_thisislanzi">
         <p>這裡是懶系</p>
         <div>
@@ -65,8 +74,9 @@
           <p>歡迎你來這裡點上一杯喜歡的調酒，讓 LANZI. 成為撫慰你心靈的秘密基地</p>
         </div>
       </div>
-      <div class="threedrink">
-        <div class="threedrink_txt">
+      <div id="keypoint"></div>
+      <section class="threedrink">
+        <div class="threedrink_txt mv01">
           <p>Lazy drink.</p>
           <p>Lazy life.</p>
         </div>
@@ -75,7 +85,7 @@
           <img src="./pictures/index/cocktail_2.jpg" class='pic2'>
           <img src="./pictures/index/cocktail_3.jpg">
         </div>
-      </div>
+      </section>
     </div>
 
     <!-- 第三塊 -->
@@ -130,7 +140,6 @@
 
 
     </div>    <!--  這是header的div -->
-
     <script>
       // 漢堡鈕的點擊改變
       var btn_nav = document.getElementsByClassName("nav_btn")[0];
@@ -140,6 +149,41 @@
         btn_nav.classList.toggle("cancel");
       });
       // ===========漢堡紐結束
+
+      // 文字隨滾動出現
+      // 場景的初始化
+      var controller = new ScrollMagic.Controller();
+
+      // 執行動畫
+      var mv_01 = TweenMax.from(".mv01", 1, {
+        y: -300,
+        opacity: 0,
+      })
+
+      // 觸發事件
+      new ScrollMagic.Scene({
+        // 觸發點
+        triggerElement: "#keypoint",
+        offset: 0, //調整觸發點的位置
+        triggerHook: 0.5, //預設值為0.5 在右邊正中央 0則為右上角
+        duration: 500 //動畫的結束點，動畫在起始~~結束間 播放完畢 滾動的速度影響動畫撥放速度與時間
+
+      }).setTween(mv_01).addTo(controller)
+      // addIndicators 顯示觸發點
+
+      // ===========文字隨滾動出現結束
+
+      // 文字隨滾動出現時，改變背景色
+      // new ScrollMagic.Scene({
+      //   // 觸發點
+      //   triggerElement: "#keypoint",
+      //   offset: 0, //調整觸發點的位置
+      //   triggerHook: 0.5, //預設值為0.5 在右邊正中央 0則為右上角
+      //   // duration: 300 //動畫的結束點，動畫在起始~~結束間 播放完畢 滾動的速度影響動畫撥放速度與時間
+      //
+      // }).setClassToggle(".background2","change_bg_color").addTo(controller)
+
+      // ===========文字隨滾動出現時，改變背景色結束
     </script>
   </body>
 </html>
