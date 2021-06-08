@@ -259,6 +259,7 @@
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+  display: none;
 }
 
 /* 下方按鈕 */

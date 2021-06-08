@@ -199,6 +199,7 @@
         let btn_result = document.getElementsByClassName('btn_result')[0];
         btn_result.addEventListener("click",function(){
           for(let i = 0; i < btn_flavor.length; i++){
+            wine_result_pic.style.display = "block";
             // 找到最後被點擊的風味按鈕
             if(btn_flavor[i].classList.contains("change")){
               let last_flavor = btn_flavor[i];
