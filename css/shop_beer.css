@@ -293,7 +293,7 @@ color: #003A2C;
 .beer_content1, .beer_content2 ,.beer_content3{
   text-align: center;
   /* border: 1px solid yellow; */
-  margin: 60px 20px;
+  margin: 40px 20px;
   padding: 30px 10px;
   line-height: 2rem;
   border-radius: 5px;
@@ -411,6 +411,10 @@ color: #003A2C;
     width: 200px;
   }
 
+  .beer_content1, .beer_content2, .beer_content3{
+    margin: 40px 0px;
+  }
+
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px){
@@ -472,7 +476,7 @@ color: #003A2C;
     line-height: 30px;
   }
   .beer_content1, .beer_content2, .beer_content3{
-    margin: 60px 10px;
+    margin: 40px 10px;
   }
 }
 

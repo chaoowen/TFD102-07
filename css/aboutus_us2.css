@@ -33,6 +33,7 @@
 
 .aboutus_bar a{
   color: #EDE0D8;
+  text-decoration: none;
 }
 
 /* 下底線 */
@@ -59,6 +60,7 @@
   text-align: right;
   letter-spacing: 7px;
   padding-bottom: 5%;
+  font-weight: bold;
 }
 
 .content{
