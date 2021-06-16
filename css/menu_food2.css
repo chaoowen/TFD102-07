@@ -53,10 +53,6 @@
 
 /* 調整主廚推薦&熱門 */
 
-.fm_rcm li{
-  /* margin-right: 100px; */
-}
-
 .fm_info{
   font-size: 20px;
   /* border: 1px solid green; */
@@ -70,6 +66,11 @@
   overflow: hidden;
 }
 
+.fm_rcm li:first-child, .fm_hot li:first-child{
+  /* text-align: center;
+  padding-left: 0; */
+}
+
 .fm_rcm,.fm_hot{
   list-style: none;
   background-color: #EDE0D8;
@@ -77,8 +78,8 @@
   color: #BD3B47;
   width: 350px;
   height: 200px;
-  text-align: center;
-  padding: 0;
+  text-align: left;
+  padding-left: 120px;
   padding-top: 30px;
 }
 
@@ -169,5 +170,8 @@
     margin: 0 auto;
     margin-bottom: 30px;
     width: 290px;
+  }
+  .fm_rcm,.fm_hot{
+    padding-left: 90px;
   }
 }
